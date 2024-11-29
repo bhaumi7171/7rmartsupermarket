@@ -1,39 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-28T19:49:18 IST" name="Default suite" finished-at="2024-11-28T19:49:37 IST" duration-ms="19468">
+  <suite started-at="2024-11-29T15:38:53 IST" name="Suite" finished-at="2024-11-29T15:38:59 IST" duration-ms="5365">
     <groups>
     </groups>
-    <test started-at="2024-11-28T19:49:18 IST" name="Default test" finished-at="2024-11-28T19:49:37 IST" duration-ms="19468">
-      <class name="testscript.LoginPage_Test">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPage_Test@49e53c76]" started-at="2024-11-28T19:49:18 IST" name="beforeMethod" finished-at="2024-11-28T19:49:37 IST" duration-ms="19048" status="PASS">
+    <test started-at="2024-11-29T15:38:53 IST" name="project7rmarttes" finished-at="2024-11-29T15:38:59 IST" duration-ms="5365">
+      <class name="testscript.Searchuser_Test">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.Searchuser_Test@67c27493]" started-at="2024-11-29T15:38:53 IST" name="beforeMethod" finished-at="2024-11-29T15:38:55 IST" duration-ms="1670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToLoginWithInCorrectUsernameIncorretPassword()[pri:4, instance:testscript.LoginPage_Test@49e53c76]" started-at="2024-11-28T19:49:37 IST" name="UserAbleToLoginWithInCorrectUsernameIncorretPassword" finished-at="2024-11-28T19:49:37 IST" duration-ms="393" status="FAIL">
+        <test-method signature="adminAbleToSearchUser(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testscript.Searchuser_Test@67c27493]" started-at="2024-11-29T15:38:55 IST" name="adminAbleToSearchUser" finished-at="2024-11-29T15:38:56 IST" duration-ms="1193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kala]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAbleToSearchUser -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.Searchuser_Test@67c27493]" started-at="2024-11-29T15:38:56 IST" name="afterMethod" finished-at="2024-11-29T15:38:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testscript.Searchuser_Test -->
+      <class name="testscript.AdminUserAdd_Test">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.AdminUserAdd_Test@692f203f]" started-at="2024-11-29T15:38:56 IST" name="beforeMethod" finished-at="2024-11-29T15:38:58 IST" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="adminAbleToLogin(java.lang.String,java.lang.String)[pri:0, instance:testscript.AdminUserAdd_Test@692f203f]" started-at="2024-11-29T15:38:58 IST" name="adminAbleToLogin" finished-at="2024-11-29T15:38:59 IST" duration-ms="1129" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Admin']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
   (Session info: chrome=131.0.6778.86)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6bd03337705bbc64f4a802410a42be6e, findElement {using=xpath, value=//a[text()=' Admin']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\binoo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56122/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6bd03337705bbc64f4a802410a42be6e]]>
+Command: [63994cf5460f201d6aa583a8d348dd65, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\binoo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57174/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63994cf5460f201d6aa583a8d348dd65]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Admin']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
   (Session info: chrome=131.0.6778.86)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6bd03337705bbc64f4a802410a42be6e, findElement {using=xpath, value=//a[text()=' Admin']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\binoo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56122/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6bd03337705bbc64f4a802410a42be6e
+Command: [63994cf5460f201d6aa583a8d348dd65, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\binoo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57174/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63994cf5460f201d6aa583a8d348dd65
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -50,9 +93,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-at pages.Login_Page.isLoginIsLoaded(Login_Page.java:35)
-at testscript.LoginPage_Test.UserAbleToLoginWithInCorrectUsernameIncorretPassword(LoginPage_Test.java:53)
+at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+at pages.Admin_UserAdd.alertmessage(Admin_UserAdd.java:63)
+at testscript.AdminUserAdd_Test.adminAbleToLogin(AdminUserAdd_Test.java:27)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -84,12 +127,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserAbleToLoginWithInCorrectUsernameIncorretPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPage_Test@49e53c76]" started-at="2024-11-28T19:49:37 IST" name="afterMethod" finished-at="2024-11-28T19:49:37 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- adminAbleToLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.AdminUserAdd_Test@692f203f]" started-at="2024-11-29T15:38:59 IST" name="afterMethod" finished-at="2024-11-29T15:38:59 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testscript.LoginPage_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testscript.AdminUserAdd_Test -->
+    </test> <!-- project7rmarttes -->
+  </suite> <!-- Suite -->
 </testng-results>

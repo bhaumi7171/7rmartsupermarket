@@ -22,18 +22,17 @@ public class LoginPage_Test extends Baseproject {
   @DataProvider(name="logincredentials")
   public Object[][] testData()
   {
-	  Object data[][]= {{"admin","1234"}};
+	  Object data[][]= {{"admin","1234"},{"1234","admin"}};
   return data;
   }
-@Test(dataProvider= "logincredentials")
+@Test(dataProvider= "logincredentials") 
   public void UserAbleToLoginWithCorrectUsernameIncorretPassword(String username, String password) {
 	  Login_Page signin=new Login_Page(driver);
 	  signin.userAbleToLoginSuccessfullyUsernamefield(username);
 	  signin.userAbleToJoinSuccessfullyPasswordfield(password);
 	  signin.userAbleToJoinSuccessfullyLogin(); 
- boolean issigninnotdone=signin.isLoginIsLoaded();
-//assertFalse(issigninnotdone,"user not able to login with in correct password");
-assertTrue(issigninnotdone, "user not able to login with incorrect password");
+ boolean isalertshown=signin.isAlertShown();
+assertTrue(isalertshown, "user not able to login with incorrect password");
   }
   @Test(priority=3)
   public void UserAbleToLoginWithInCorrectUsernameCorretPassword() {
@@ -41,8 +40,8 @@ assertTrue(issigninnotdone, "user not able to login with incorrect password");
 	  signin.userAbleToLoginSuccessfullyUsernamefield("12admin");
 	  signin.userAbleToJoinSuccessfullyPasswordfield("admin");
 	  signin.userAbleToJoinSuccessfullyLogin(); 
-	 boolean issigninnotdone=signin.isLoginIsLoaded();
-	 assertTrue(issigninnotdone, "user not able to login with incorrect username and correct password");
+	  boolean isalertshown=signin.isAlertShown();
+	 assertTrue(isalertshown, "user not able to login with incorrect username and correct password");
   }
   @Test(priority=4)
   public void UserAbleToLoginWithInCorrectUsernameIncorretPassword() {
@@ -50,8 +49,8 @@ assertTrue(issigninnotdone, "user not able to login with incorrect password");
 	  signin.userAbleToLoginSuccessfullyUsernamefield("12admin");
 	  signin.userAbleToJoinSuccessfullyPasswordfield("aadmin12");
 	  signin.userAbleToJoinSuccessfullyLogin();
- boolean issigninnotdone=signin.isLoginIsLoaded();
-	assertTrue(issigninnotdone, "user not able to login with in correct username and password");
-	//assertFalse(issigninnotdone, "user not able to login with in correct username and password");
+	  boolean isalertshown=signin.isAlertShown();
+	assertTrue(isalertshown, "user not able to login with in correct username and password");
+	
   }
 }

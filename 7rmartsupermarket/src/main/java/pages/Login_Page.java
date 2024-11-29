@@ -17,6 +17,7 @@ public class Login_Page {
 	@FindBy(xpath="//input[@placeholder='Password']") WebElement password;
 	@FindBy(xpath="//button[text()='Sign In']") WebElement signin;
 	@FindBy(xpath="//a[text()=' Admin']") WebElement admin;
+	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement alert;
 	
 	public void userAbleToLoginSuccessfullyUsernamefield(String usernamefield)
 			{
@@ -34,5 +35,8 @@ public class Login_Page {
 	{
 		return admin.isDisplayed();
 				}
-	
+	public boolean isAlertShown()
+	{
+	return alert.isDisplayed();
+	}
 }

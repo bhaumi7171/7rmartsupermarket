@@ -3,17 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="project7rmarttes(failed)">
     <parameter name="password" value="admin"/>
+    <parameter name="usernamefield" value="Kala"/>
     <parameter name="username" value="admin"/>
     <classes>
-      <class name="testscript.LoginPage_Test">
+      <class name="testscript.AdminUserAdd_Test">
         <methods>
           <include name="beforeMethod"/>
-          <include name="UserAbleToLoginWithInCorrectUsernameCorretPassword"/>
-          <include name="UserAbleToLoginWithCorrectUsernameIncorretPassword" invocation-numbers="0"/>
-          <include name="UserAbleToLoginWithInCorrectUsernameIncorretPassword"/>
+          <include name="adminAbleToLogin" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testscript.LoginPage_Test -->
+      </class> <!-- testscript.AdminUserAdd_Test -->
     </classes>
   </test> <!-- project7rmarttes(failed) -->
 </suite> <!-- Failed suite [Suite] -->
