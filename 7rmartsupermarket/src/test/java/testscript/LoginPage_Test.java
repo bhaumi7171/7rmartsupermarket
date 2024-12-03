@@ -3,54 +3,69 @@ package testscript;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import constants.Constant;
 import pages.Login_Page;
+import utilities.Excel_Utility;
 
 public class LoginPage_Test extends Baseproject {
   @Test(priority=1)
-  @Parameters({"username","password"})
-  public void UserAbleToLoginWithCorrectCredentials(String username, String password) {
+
+  public void UserAbleToLoginWithCorrectCredentials() throws IOException {
+	  String username=Excel_Utility.readStringData(1, 0,"Login_Page");
+	  String password= Excel_Utility.readStringData(1, 1,"Login_Page");
 	  Login_Page signin=new Login_Page(driver);
 	  signin.userAbleToLoginSuccessfullyUsernamefield(username);
 	  signin.userAbleToJoinSuccessfullyPasswordfield(password);
 	  signin.userAbleToJoinSuccessfullyLogin();
 	  boolean issignindone=signin.isLoginIsLoaded();
-	  assertTrue(issignindone, "user able to login with in correct username and password");
-  }
+	  assertTrue(issignindone,Constant.ERRORMESSAGEFORLOGIN);
+  }/*
   @DataProvider(name="logincredentials")
   public Object[][] testData()
   {
 	  Object data[][]= {{"admin","1234"},{"1234","admin"}};
   return data;
-  }
-@Test(dataProvider= "logincredentials") 
-  public void UserAbleToLoginWithCorrectUsernameIncorretPassword(String username, String password) {
+  }*/
+@Test(priority=2)//(dataProvider= "logincredentials") 
+  public void UserAbleToLoginWithCorrectUsernameIncorretPassword() throws IOException {
+	 String username=Excel_Utility.readStringData(2, 0,"Login_Page");
+	  String password= Excel_Utility.readStringData(2, 1,"Login_Page");
+	  
 	  Login_Page signin=new Login_Page(driver);
 	  signin.userAbleToLoginSuccessfullyUsernamefield(username);
 	  signin.userAbleToJoinSuccessfullyPasswordfield(password);
 	  signin.userAbleToJoinSuccessfullyLogin(); 
  boolean isalertshown=signin.isAlertShown();
-assertTrue(isalertshown, "user not able to login with incorrect password");
+assertTrue(isalertshown,Constant.ERRORMESSAGEFORLOGIN1);
   }
   @Test(priority=3)
-  public void UserAbleToLoginWithInCorrectUsernameCorretPassword() {
+  public void UserAbleToLoginWithInCorrectUsernameCorretPassword() throws IOException
+  {
+	  String username=Excel_Utility.readStringData(3, 0, "Login_Page");
+	  String password=Excel_Utility.readStringData(3, 1, "Login_Page");
 	  Login_Page signin=new Login_Page(driver);
-	  signin.userAbleToLoginSuccessfullyUsernamefield("12admin");
-	  signin.userAbleToJoinSuccessfullyPasswordfield("admin");
+	  signin.userAbleToLoginSuccessfullyUsernamefield(username);
+	  signin.userAbleToJoinSuccessfullyPasswordfield(password);
 	  signin.userAbleToJoinSuccessfullyLogin(); 
 	  boolean isalertshown=signin.isAlertShown();
-	 assertTrue(isalertshown, "user not able to login with incorrect username and correct password");
+	 assertTrue(isalertshown,Constant.ERRORMESSAGEFORLOGIN2);
   }
   @Test(priority=4)
-  public void UserAbleToLoginWithInCorrectUsernameIncorretPassword() {
+  public void UserAbleToLoginWithInCorrectUsernameIncorretPassword() throws IOException {
+	  String username=Excel_Utility.readStringData(4, 0, "Login_Page");
+	  String password=Excel_Utility.readIntegerData(4, 1, "Login_Page");
 	  Login_Page signin=new Login_Page(driver);
-	  signin.userAbleToLoginSuccessfullyUsernamefield("12admin");
-	  signin.userAbleToJoinSuccessfullyPasswordfield("aadmin12");
+	  signin.userAbleToLoginSuccessfullyUsernamefield(username);
+	  signin.userAbleToJoinSuccessfullyPasswordfield(password);
 	  signin.userAbleToJoinSuccessfullyLogin();
 	  boolean isalertshown=signin.isAlertShown();
-	assertTrue(isalertshown, "user not able to login with in correct username and password");
+	assertTrue(isalertshown,Constant.ERRORMESSAGEFORLOGIN3);
 	
   }
 }

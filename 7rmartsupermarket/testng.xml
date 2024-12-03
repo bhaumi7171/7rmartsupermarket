@@ -4,12 +4,13 @@
   <test thread-count="5" name="project7rmarttes">
   <parameter name="username" value="admin"></parameter>
   <parameter name="password" value="admin"></parameter>
-   <parameter name="usernamefield" value="Kala"></parameter>
+   
     <classes>
-      <class name="testscript.Searchuser_Test"/>
-      <class name="testscript.AdminUserAdd_Test">
+   
+<class name="testscript.HomePage_test">
       
       </class>
     </classes>
   </test> <!-- project7rmarttes -->
 </suite> <!-- Suite -->
+   

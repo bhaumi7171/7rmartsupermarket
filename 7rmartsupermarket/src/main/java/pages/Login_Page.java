@@ -19,17 +19,20 @@ public class Login_Page {
 	@FindBy(xpath="//a[text()=' Admin']") WebElement admin;
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement alert;
 	
-	public void userAbleToLoginSuccessfullyUsernamefield(String usernamefield)
+	public Login_Page userAbleToLoginSuccessfullyUsernamefield(String usernamefield)
 			{
 		username.sendKeys(usernamefield);
+		return this;
 		}
-	public void userAbleToJoinSuccessfullyPasswordfield(String passwordfield)
+	public Login_Page userAbleToJoinSuccessfullyPasswordfield(String passwordfield)
 	{
 		password.sendKeys(passwordfield);
+		return this;
 	}
-	public void userAbleToJoinSuccessfullyLogin()
+	public Home_Page userAbleToJoinSuccessfullyLogin()
 	{
 		signin.click();
+		return new Home_Page(driver);
 	}
 	public boolean isLoginIsLoaded()
 	{

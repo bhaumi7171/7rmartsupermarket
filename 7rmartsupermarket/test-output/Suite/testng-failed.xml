@@ -3,7 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="project7rmarttes(failed)">
     <parameter name="password" value="admin"/>
-    <parameter name="usernamefield" value="Kala"/>
     <parameter name="username" value="admin"/>
     <classes>
       <class name="testscript.AdminUserAdd_Test">
