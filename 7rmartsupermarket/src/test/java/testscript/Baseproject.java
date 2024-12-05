@@ -16,6 +16,7 @@ public class Baseproject {
 		 driver= new ChromeDriver();
 		 driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		 driver.manage().window().maximize();
+		 //driver.manage().wait()
   }
   
   @AfterMethod

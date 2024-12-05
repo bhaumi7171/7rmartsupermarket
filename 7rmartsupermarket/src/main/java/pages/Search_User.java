@@ -14,19 +14,14 @@ public class Search_User {
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
-		
-	}
-	
+		}
 	@FindBy(xpath="/html/body/div/div[1]/section/div[2]/div/div[1]/div/div/div/div[2]/form/div/div[1]/input") WebElement searchusername;
 	@FindBy(id="un") WebElement searchusernamefield;
 	@FindBy(id="ut") WebElement searchusertype;
 	@FindBy(xpath="//button[@name='Search']") WebElement searchdetails;
 	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]") WebElement tabledetails;
 	@FindBy(xpath="//td[text()='Kala']") WebElement tabletext;
-	
-	
-
-public Search_User adminAbleToClickOnSearchUsernameField()
+	public Search_User adminAbleToClickOnSearchUsernameField()
 {
 	searchusername.click();
 	return this;
@@ -38,9 +33,7 @@ public Search_User adminAbleToEnterUsername(String usernamefield) {
 public Search_User adminAbleToSelectUserType()
 {
 	Page_Utility page=new Page_Utility();
-	page.Selectbytext(searchusertype, "Staff");
-	/*Select dropdown=new Select(searchusertype);
-	dropdown.selectByVisibleText("Staff");*/
+	page.selectbytext(searchusertype, "Staff");
 	return this;
 }
 public Search_User adminAbleToSearchWithDetails()

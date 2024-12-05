@@ -14,25 +14,25 @@ import utilities.Page_Utility;
 
 public class Admin_UserAdd {
 	public WebDriver driver;
-	public Admin_UserAdd(WebDriver driver)
-	{
-		this.driver=driver;
+
+	public Admin_UserAdd(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		
 	}
-	
-	//@FindBy(xpath="//h1[text()='Admin Users']") WebElement adminuserpage;
-	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']") WebElement newuser;
-	@FindBy(xpath="id(\"username\")") WebElement usernamefield;
-	@FindBy(xpath="id(\"password\")") WebElement passwordfield;
-	@FindBy(xpath="id(\"user_type\")") WebElement usertype;
-	@FindBy(xpath="//button[@name='Create']") WebElement save;
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alert;
-	
-	
-	
-	public Admin_UserAdd adminUserAdd()
-	{
+
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
+	WebElement newuser;
+	@FindBy(xpath = "id(\"username\")")
+	WebElement usernamefield;
+	@FindBy(xpath = "id(\"password\")")
+	WebElement passwordfield;
+	@FindBy(xpath = "id(\"user_type\")")
+	WebElement usertype;
+	@FindBy(xpath = "//button[@name='Create']")
+	WebElement save;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement alert;
+	public Admin_UserAdd adminUserAdd() {
 		newuser.click();
 		return this;
 	}
@@ -40,43 +40,34 @@ public class Admin_UserAdd {
 		usernamefield.click();
 		return this;
 	}
-	
-	public Admin_UserAdd enterUsername(String username)
-	{
-	
+
+	public Admin_UserAdd enterUsername(String username) {
 		usernamefield.sendKeys(username);
 		return this;
 	}
-	public Admin_UserAdd enterpasswordclick()
-	{
+
+	public Admin_UserAdd enterpasswordclick() {
 		passwordfield.click();
 		return this;
 	}
-	public Admin_UserAdd enterPassword(String password)
-	{
-		
+
+	public Admin_UserAdd enterPassword(String password) {
 		passwordfield.sendKeys(password);
 		return this;
 	}
-	public Admin_UserAdd userTypeDropdown()
-	{
-		Page_Utility page=new Page_Utility();
-		page.Selectbytext(usertype, "Staff");
+
+	public Admin_UserAdd userTypeDropdown() {
+		Page_Utility page = new Page_Utility();
+		page.selectbytext(usertype, "Staff");
 		return this;
-		//Select dropdown=new Select(usertype);
-		//dropdown.selectByVisibleText("Staff");
 	}
-	public Admin_UserAdd saveUser()
-	{
+
+	public Admin_UserAdd saveUser() {
 		save.click();
 		return this;
 	}
-	/*public boolean adminUserPageloaded()
-	{
-		return adminuserpage.isDisplayed();
-	}*/
-	public boolean alertmessage()
-	{
+
+	public boolean alertmessage() {
 		return alert.isDisplayed();
 	}
 
