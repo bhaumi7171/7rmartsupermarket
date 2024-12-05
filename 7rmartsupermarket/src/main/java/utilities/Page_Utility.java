@@ -16,7 +16,11 @@ public class Page_Utility {
 		Select drop = new Select(dropdown);
 		drop.selectByVisibleText("Staff");
 	}
-
+public void selectbyindex(WebElement dropdown, Integer text )
+{
+	Select drop= new Select(dropdown);
+	drop.selectByIndex(2);
+}
 	public void dropDownInCategory(WebElement selectgroup, WebElement selectgroupdrop) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(selectgroup);

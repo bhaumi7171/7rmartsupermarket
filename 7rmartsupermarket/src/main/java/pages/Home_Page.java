@@ -29,6 +29,9 @@ public class Home_Page {
 	@FindBy(xpath = "/html/body/div/div[1]/section/div/div/div[5]/div/a") WebElement managecontact;
 	@FindBy(xpath="/html/body/div/div[1]/section/div/div/div[9]/div/a") WebElement newspage;
 	@FindBy(xpath="/html/body/div/div[1]/section/div/div/div[10]/div/a") WebElement footerpage;
+	@FindBy(xpath = "/html/body/div/div[1]/section/div/div/div[4]/div/a")
+	WebElement subcategory;
+	@FindBy(xpath="//html/body/div/div[1]/section/div/div/div[11]/div/a") WebElement managecategorypage;
 	public Home_Page UserAbleToLogoutSuccessfully() {
 		adminuserr.click();
 		return this;
@@ -75,4 +78,12 @@ public class Home_Page {
 	footerpage.click();
 	return new Manage_Footer(driver);
 	}
+	public Sub_Category AdminAbleToGetSubCategoryPage() {
+		subcategory.click();
+		return new Sub_Category(driver);
+	}
+	public Manage_Category adminAbleToManageCategory() {
+		 managecategorypage.click();
+		 return new Manage_Category(driver);
+	 }
 }

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-05T14:50:38 IST" name="Default suite" finished-at="2024-12-05T14:50:42 IST" duration-ms="3982">
+  <suite started-at="2024-12-05T19:18:37 IST" name="Default suite" finished-at="2024-12-05T19:19:20 IST" duration-ms="43593">
     <groups>
     </groups>
-    <test started-at="2024-12-05T14:50:38 IST" name="Default test" finished-at="2024-12-05T14:50:42 IST" duration-ms="3982">
-      <class name="testscript.AdminAddCategory_Test">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.AdminAddCategory_Test@4efbca5a]" started-at="2024-12-05T14:50:38 IST" name="beforeMethod" finished-at="2024-12-05T14:50:40 IST" duration-ms="1744" status="PASS">
+    <test started-at="2024-12-05T19:18:37 IST" name="Default test" finished-at="2024-12-05T19:19:20 IST" duration-ms="43593">
+      <class name="testscript.ManageCategory_Test">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.ManageCategory_Test@4efbca5a]" started-at="2024-12-05T19:18:37 IST" name="beforeMethod" finished-at="2024-12-05T19:18:57 IST" duration-ms="20040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToAddCategory()[pri:0, instance:testscript.AdminAddCategory_Test@4efbca5a]" started-at="2024-12-05T14:50:40 IST" name="UserAbleToAddCategory" finished-at="2024-12-05T14:50:42 IST" duration-ms="2215" status="PASS">
+        <test-method signature="userAbleTomanageCategory()[pri:0, instance:testscript.ManageCategory_Test@4efbca5a]" started-at="2024-12-05T19:18:57 IST" name="userAbleTomanageCategory" finished-at="2024-12-05T19:19:20 IST" duration-ms="23533" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserAbleToAddCategory -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.AdminAddCategory_Test@4efbca5a]" started-at="2024-12-05T14:50:42 IST" name="afterMethod" finished-at="2024-12-05T14:50:42 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- userAbleTomanageCategory -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.ManageCategory_Test@4efbca5a]" started-at="2024-12-05T19:19:20 IST" name="afterMethod" finished-at="2024-12-05T19:19:20 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testscript.AdminAddCategory_Test -->
+      </class> <!-- testscript.ManageCategory_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
