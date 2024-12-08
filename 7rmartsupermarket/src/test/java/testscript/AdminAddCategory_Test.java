@@ -23,7 +23,7 @@ public class AdminAddCategory_Test extends Baseproject {
 		String password1 = Excel_Utility.readStringData(1, 1, "Login_Page");
 		String cat = Excel_Utility.readStringData(2, 0, "Category_Page");
 		Login_Page signin = new Login_Page(driver);
-		signin.userAbleToLoginSuccessfullywithlogindetails(username1,password1);
+		signin.userAbleToLoginSuccessfullywithlogindetails(username1, password1);
 		homepage = signin.userAbleToJoinSuccessfullyLogin();
 		category = homepage.categoryPage();
 		category.userAbleToAddNewCategory();

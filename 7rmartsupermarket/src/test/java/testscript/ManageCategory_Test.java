@@ -15,8 +15,9 @@ import utilities.Excel_Utility;
 public class ManageCategory_Test extends Baseproject {
 	Home_Page homepage;
 	Manage_Category managecategory;
+
 	@Test
-	public void userAbleTomanageCategory() throws IOException {    
+	public void userAbleTomanageCategory() throws IOException {
 		String username1 = Excel_Utility.readStringData(1, 0, "Login_Page");
 		String password1 = Excel_Utility.readStringData(1, 1, "Login_Page");
 		String cat = Excel_Utility.readStringData(1, 0, "Category_Page");

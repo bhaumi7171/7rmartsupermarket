@@ -30,5 +30,5 @@ public class HomePage_test extends Baseproject {
 		homepage.LogoutButtonn();
 		homepage.logout();
 		assertEquals(log, title, Constant.ERRORMESSAGEFORLOGOUT);
-	}
+	} 
 }

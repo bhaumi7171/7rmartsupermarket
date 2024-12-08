@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.ManageCategory_Test">
+      <class name="testscript.AdminUserAdd_Test">
         <methods>
           <include name="beforeMethod"/>
-          <include name="userAbleTomanageCategory"/>
+          <include name="adminAbleToLogin"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testscript.ManageCategory_Test -->
+      </class> <!-- testscript.AdminUserAdd_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

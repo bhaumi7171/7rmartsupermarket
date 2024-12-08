@@ -30,31 +30,31 @@ public class Sub_Category {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement alert;
 
-	public Sub_Category AdminAbleToAddNewSubCategory() {
+	public Sub_Category adminAbleToAddNewSubCategory() {
 		newsubcategory.click();
 		return this;
 	}
 
-	public Sub_Category AdminAbleToSelectcategory() {
+	public Sub_Category adminAbleToSelectcategory() {
 		selectcategory.click();
 		Page_Utility category = new Page_Utility();
 		category.selectbyindex(selectcategory, 2);
 		return this;
 	}
 
-	public Sub_Category AdminAbleToAddSubCategory(String subcategory) {
+	public Sub_Category adminAbleToAddSubCategory(String subcategory) {
 		selectsubcategory.sendKeys(subcategory);
 		return this;
 	}
 
-	public Sub_Category AdminAbleToUploadImage() {
+	public Sub_Category adminAbleToUploadImage() {
 		String image = Constant.TESTIMAGEFILE;
 		Fileupload_Utility file = new Fileupload_Utility();
 		file.sendKeysProfileUpload(categoryimage, image);
 		return this;
 	}
 
-	public Sub_Category AdminAbleToSavecategory() {
+	public Sub_Category adminAbleToSavecategory() {
 		save.click();
 		return this;
 	}

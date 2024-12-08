@@ -38,4 +38,9 @@ public void selectbyindex(WebElement dropdown, Integer text )
 		robo.keyPress(KeyEvent.VK_ENTER);
 		robo.keyRelease(KeyEvent.VK_ENTER);
 	}
+	public void Selection(WebElement details) {
+		Actions action=new Actions(driver);
+		//action.doubleClick(details);
+		action.doubleClick().clickAndHold(details);
+	}
 }
