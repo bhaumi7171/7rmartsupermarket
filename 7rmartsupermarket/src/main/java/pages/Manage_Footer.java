@@ -45,12 +45,12 @@ public class Manage_Footer {
 	}
 
 	public Manage_Footer userAbleToeditFooterEmail(String email) throws AWTException {
-		//Wait_Utility wait = new Wait_Utility();
-		//wait.waitForElementToBeClickable(driver, editfooteremail);
+		// Wait_Utility wait = new Wait_Utility();
+		// wait.waitForElementToBeClickable(driver, editfooteremail);
 		editfooteremail.click();
-		  Page_Utility select=new Page_Utility();
-		  select.Selection(editfooteremail);
-		 editfooteremail.sendKeys(email);
+		Page_Utility select = new Page_Utility();
+		select.Selection(editfooteremail);
+		editfooteremail.sendKeys(email);
 		return this;
 	}
 

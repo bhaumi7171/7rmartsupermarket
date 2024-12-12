@@ -17,7 +17,7 @@ public class AdminUserAdd_Test extends Baseproject {
 	public Home_Page homepage;
 	public Admin_UserAdd adminuser;
 
-	@Test
+	@Test(retryAnalyzer = retry.Retry.class)
 	public void adminAbleToLogin() throws IOException {
 		String username1 = Excel_Utility.readStringData(1, 0, "Login_Page");
 		String password1 = Excel_Utility.readStringData(1, 1, "Login_Page");

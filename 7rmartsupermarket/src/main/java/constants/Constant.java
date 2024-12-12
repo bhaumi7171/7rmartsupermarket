@@ -20,4 +20,5 @@ public class Constant {
 	public static final String ERRORMESSAGEFORADDCATEGORY = "not able to add category";
 	public static final String ERRORMESSAGEFORADDSUBCATEGORY = "not able to add sub category";
 	public static final String ERRORMESSAGEFORSEARCHCATEGORY = "not able to search category";
+	public static final String CONFIGFILE= System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties";
 }

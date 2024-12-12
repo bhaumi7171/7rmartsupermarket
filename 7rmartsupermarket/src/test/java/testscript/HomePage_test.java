@@ -31,4 +31,4 @@ public class HomePage_test extends Baseproject {
 		homepage.logout();
 		assertEquals(log, title, Constant.ERRORMESSAGEFORLOGOUT);
 	} 
-}
+} 
