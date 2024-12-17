@@ -17,6 +17,7 @@ import utilities.Excel_Utility;
 
 public class HomePage_test extends Baseproject {
 	public Home_Page homepage;
+
 	@Test
 	public void UserAbleToLogout() throws IOException {
 		String title = driver.getTitle();
@@ -30,5 +31,5 @@ public class HomePage_test extends Baseproject {
 		homepage.LogoutButtonn();
 		homepage.logout();
 		assertEquals(log, title, Constant.ERRORMESSAGEFORLOGOUT);
-	} 
-} 
+	}
+}

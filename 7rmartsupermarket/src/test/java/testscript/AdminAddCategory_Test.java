@@ -31,8 +31,8 @@ public class AdminAddCategory_Test extends Baseproject {
 		category.userAbleToEnterCategory(cat);
 		category.userAbletoSelectGroup();
 		category.userAbleToUploadCategoryImage();
-		category.userAbleToSaveCategory(); 
-		boolean alert=category.isCategorySavedSuccessfully();
+		category.userAbleToSaveCategory();
+		boolean alert = category.isCategorySavedSuccessfully();
 		assertTrue(alert, Constant.ERRORMESSAGEFORADDCATEGORY);
 	}
 }

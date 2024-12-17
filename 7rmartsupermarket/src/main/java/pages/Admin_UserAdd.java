@@ -32,10 +32,12 @@ public class Admin_UserAdd {
 	WebElement save;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement alert;
+
 	public Admin_UserAdd adminUserAdd() {
 		newuser.click();
 		return this;
 	}
+
 	public Admin_UserAdd enterusernameclick() {
 		usernamefield.click();
 		return this;

@@ -26,12 +26,17 @@ public class Home_Page {
 	WebElement search;
 	@FindBy(xpath = "/html/body/div/div[1]/section/div/div/div[3]/div/a")
 	WebElement category;
-	@FindBy(xpath = "/html/body/div/div[1]/section/div/div/div[5]/div/a") WebElement managecontact;
-	@FindBy(xpath="/html/body/div/div[1]/section/div/div/div[9]/div/a") WebElement newspage;
-	@FindBy(xpath="/html/body/div/div[1]/section/div/div/div[10]/div/a") WebElement footerpage;
+	@FindBy(xpath = "/html/body/div/div[1]/section/div/div/div[5]/div/a")
+	WebElement managecontact;
+	@FindBy(xpath = "/html/body/div/div[1]/section/div/div/div[9]/div/a")
+	WebElement newspage;
+	@FindBy(xpath = "/html/body/div/div[1]/section/div/div/div[10]/div/a")
+	WebElement footerpage;
 	@FindBy(xpath = "/html/body/div/div[1]/section/div/div/div[4]/div/a")
 	WebElement subcategory;
-	@FindBy(xpath="//html/body/div/div[1]/section/div/div/div[11]/div/a") WebElement managecategorypage;
+	@FindBy(xpath = "//html/body/div/div[1]/section/div/div/div[11]/div/a")
+	WebElement managecategorypage;
+
 	public Home_Page UserAbleToLogoutSuccessfully() {
 		adminuserr.click();
 		return this;
@@ -63,27 +68,29 @@ public class Home_Page {
 		category.click();
 		return new AdminAdd_Category(driver);
 	}
-	public Manage_Contact userAbleToManageContact()
-	{
+
+	public Manage_Contact userAbleToManageContact() {
 		managecontact.click();
 		return new Manage_Contact(driver);
 	}
-	public Manage_News userAbleToGetNewsPage()
-	{
+
+	public Manage_News userAbleToGetNewsPage() {
 		newspage.click();
 		return new Manage_News(driver);
 	}
-	public Manage_Footer userAbleToGetFooterPage()
-	{
-	footerpage.click();
-	return new Manage_Footer(driver);
+
+	public Manage_Footer userAbleToGetFooterPage() {
+		footerpage.click();
+		return new Manage_Footer(driver);
 	}
+
 	public Sub_Category AdminAbleToGetSubCategoryPage() {
 		subcategory.click();
 		return new Sub_Category(driver);
 	}
+
 	public Manage_Category adminAbleToManageCategory() {
-		 managecategorypage.click();
-		 return new Manage_Category(driver);
-	 }
+		managecategorypage.click();
+		return new Manage_Category(driver);
+	}
 }

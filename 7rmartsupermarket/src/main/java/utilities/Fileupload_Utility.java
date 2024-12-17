@@ -23,15 +23,15 @@ public class Fileupload_Utility {
 		robot.delay(2);// delay(120) means 120 second delay, time is in second if not upload the delay
 						// will work, if working or uploaded delay will not working
 		robot.keyPress(KeyEvent.VK_CONTROL);
-		robot.keyPress(KeyEvent.VK_V);  
+		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
-	public void selectDetails() throws AWTException
-	{
-		Robot robo=new Robot();
+
+	public void selectDetails() throws AWTException {
+		Robot robo = new Robot();
 		;
 		robo.delay(2);
 		robo.keyPress(KeyEvent.VK_CONTROL);

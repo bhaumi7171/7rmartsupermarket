@@ -18,6 +18,7 @@ public class Searchuser_Test extends Baseproject {
 	public Home_Page homepage;
 	public Admin_UserAdd adminuser;
 	public Search_User search;
+
 	@Test
 	public void adminAbleToSearchUser() throws IOException {
 		String username = Excel_Utility.readStringData(1, 0, "Login_Page");

@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import constants.Constant;
 import utilities.ScreenShot_Utility;
 
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
@@ -23,48 +22,46 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
 public class Baseproject {
-public WebDriver driver;
-public Properties properties;
-public  FileInputStream fis;
+	public WebDriver driver;
+	public Properties properties;
+	public FileInputStream fis;
 
+	@BeforeMethod
+	@Parameters("browzer")
+	public void beforeMethod(String browzer) throws Exception {
 
-@BeforeMethod
-@Parameters("browzer")
-public void beforeMethod(String browzer) throws Exception {
+		try {
+			properties = new Properties();
+			fis = new FileInputStream(Constant.CONFIGFILE);
+			properties.load(fis);
 
-try {
-properties = new Properties();
-fis = new FileInputStream(Constant.CONFIGFILE);
-properties.load(fis);
+		} catch (FileNotFoundException exception) {
+			exception.printStackTrace();
+		}
+		if (browzer.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		} else if (browzer.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+		} else if (browzer.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+		} else {
+			throw new Exception("invalid browser");
+		}
+		driver.get(properties.getProperty("url"));
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
 
-} catch (FileNotFoundException exception) {
-exception.printStackTrace();
-}
-if (browzer.equalsIgnoreCase("chrome")) {
-driver = new ChromeDriver();
-} else if (browzer.equalsIgnoreCase("edge")) {
-driver = new EdgeDriver();
-} else if (browzer.equalsIgnoreCase("firefox")) {
-driver = new FirefoxDriver();
-} else {
-throw new Exception("invalid browser");
-}
-driver.get(properties.getProperty("url"));
-driver.manage().window().maximize();
-driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-}
-
-
-@AfterMethod
-public void afterMethod(ITestResult itResult) throws IOException {
-if (itResult.getStatus() == ITestResult.FAILURE) {
-ScreenShot_Utility sc = new ScreenShot_Utility();
-sc.captureFailureScreenShot(driver, itResult.getName());
-}
-if (driver != null) {
-driver.quit();
-}
+	@AfterMethod
+	public void afterMethod(ITestResult itResult) throws IOException {
+		if (itResult.getStatus() == ITestResult.FAILURE) {
+			ScreenShot_Utility sc = new ScreenShot_Utility();
+			sc.captureFailureScreenShot(driver, itResult.getName());
+		}
+		if (driver != null) {
+			driver.quit();
+		}
 // driver.quit();
-}
+	}
 
 }

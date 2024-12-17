@@ -16,6 +16,7 @@ import utilities.Excel_Utility;
 public class ManageFooter_Test extends Baseproject {
 	public Home_Page homepage;
 	public Manage_Footer footer;
+
 	@Test
 	public void userAbleToManageFooter() throws IOException, AWTException {
 		Login_Page signin = new Login_Page(driver);

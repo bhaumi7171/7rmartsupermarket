@@ -13,6 +13,7 @@ public class Login_Page {
 		PageFactory.initElements(driver, this);
 
 	}
+
 	@FindBy(xpath = "//input[@placeholder='Username']")
 	WebElement username;
 	@FindBy(xpath = "//input[@placeholder='Password']")
@@ -23,18 +24,22 @@ public class Login_Page {
 	WebElement admin;
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
 	WebElement alert;
+
 	public Login_Page userAbleToLoginSuccessfullywithlogindetails(String usernamefield, String passwordfield) {
 		username.sendKeys(usernamefield);
 		password.sendKeys(passwordfield);
 		return this;
 	}
+
 	public Home_Page userAbleToJoinSuccessfullyLogin() {
 		signin.click();
 		return new Home_Page(driver);
 	}
+
 	public boolean isLoginIsLoaded() {
 		return admin.isDisplayed();
 	}
+
 	public boolean isAlertShown() {
 		return alert.isDisplayed();
 	}

@@ -6,7 +6,7 @@ public class Constant {
 			+ "\\src\\main\\resources\\713KBhhBQRL._SX522_.jpg";
 	public static final String TESTIMAGEFILEJEW = System.getProperty("user.dir")
 			+ "\\src\\main\\resources\\6b8b11b65c0739c81a2a5dc32fcfb46a.jpg";
-	
+
 	public static final String ERRORMESSAGEFORLOGIN = "user able to login with in correct username and password";
 	public static final String ERRORMESSAGEFORLOGIN1 = "user not able to login with incorrect password";
 	public static final String ERRORMESSAGEFORLOGIN2 = "user not able to login with incorrect username and correct password";
@@ -20,5 +20,6 @@ public class Constant {
 	public static final String ERRORMESSAGEFORADDCATEGORY = "not able to add category";
 	public static final String ERRORMESSAGEFORADDSUBCATEGORY = "not able to add sub category";
 	public static final String ERRORMESSAGEFORSEARCHCATEGORY = "not able to search category";
-	public static final String CONFIGFILE= System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties";
+	public static final String CONFIGFILE = System.getProperty("user.dir")
+			+ "\\src\\test\\resources\\config.properties";
 }
