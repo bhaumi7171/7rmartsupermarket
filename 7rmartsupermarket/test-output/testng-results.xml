@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T22:07:22 IST" name="Suite" finished-at="2024-12-11T22:07:31 IST" duration-ms="8729">
+  <suite started-at="2024-12-12T12:56:00 IST" name="Suite" finished-at="2024-12-12T12:56:13 IST" duration-ms="12725">
     <groups>
     </groups>
-    <test started-at="2024-12-11T22:07:22 IST" name="chrometest" finished-at="2024-12-11T22:07:25 IST" duration-ms="2781">
+    <test started-at="2024-12-12T12:56:00 IST" name="chrometest" finished-at="2024-12-12T12:56:09 IST" duration-ms="8902">
       <class name="testscript.LoginPage_Test">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@3a52dba3]" started-at="2024-12-11T22:07:22 IST" name="beforeMethod" finished-at="2024-12-11T22:07:23 IST" duration-ms="1569" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:00 IST" name="beforeMethod" finished-at="2024-12-12T12:56:02 IST" duration-ms="1828" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,93 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@3a52dba3]" started-at="2024-12-11T22:07:23 IST" name="UserAbleToLoginWithCorrectCredentials" finished-at="2024-12-11T22:07:24 IST" duration-ms="1059" status="PASS">
+        <test-method signature="UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:02 IST" name="UserAbleToLoginWithCorrectCredentials" finished-at="2024-12-12T12:56:03 IST" duration-ms="1213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserAbleToLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@3a52dba3]" started-at="2024-12-11T22:07:24 IST" name="afterMethod" finished-at="2024-12-11T22:07:25 IST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:03 IST" name="afterMethod" finished-at="2024-12-12T12:56:04 IST" duration-ms="115" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserAbleToLoginWithCorrectCredentials status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=UserAbleToLoginWithCorrectCredentials status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:04 IST" name="beforeMethod" finished-at="2024-12-12T12:56:05 IST" duration-ms="1299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="UserAbleToLoginWithCorrectUsernameIncorretPassword()[pri:2, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:05 IST" name="UserAbleToLoginWithCorrectUsernameIncorretPassword" finished-at="2024-12-12T12:56:05 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserAbleToLoginWithCorrectUsernameIncorretPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:05 IST" name="afterMethod" finished-at="2024-12-12T12:56:05 IST" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserAbleToLoginWithCorrectUsernameIncorretPassword status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithCorrectUsernameIncorretPassword()[pri:2, instance:testscript.LoginPage_Test@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:05 IST" name="beforeMethod" finished-at="2024-12-12T12:56:07 IST" duration-ms="1487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="UserAbleToLoginWithInCorrectUsernameCorretPassword()[pri:3, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:07 IST" name="UserAbleToLoginWithInCorrectUsernameCorretPassword" finished-at="2024-12-12T12:56:07 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserAbleToLoginWithInCorrectUsernameCorretPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:07 IST" name="afterMethod" finished-at="2024-12-12T12:56:07 IST" duration-ms="98" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserAbleToLoginWithInCorrectUsernameCorretPassword status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithInCorrectUsernameCorretPassword()[pri:3, instance:testscript.LoginPage_Test@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:07 IST" name="beforeMethod" finished-at="2024-12-12T12:56:09 IST" duration-ms="1354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="UserAbleToLoginWithInCorrectUsernameIncorretPassword()[pri:4, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:09 IST" name="UserAbleToLoginWithInCorrectUsernameIncorretPassword" finished-at="2024-12-12T12:56:09 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserAbleToLoginWithInCorrectUsernameIncorretPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:09 IST" name="afterMethod" finished-at="2024-12-12T12:56:09 IST" duration-ms="122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserAbleToLoginWithInCorrectUsernameIncorretPassword status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithInCorrectUsernameIncorretPassword()[pri:4, instance:testscript.LoginPage_Test@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
@@ -35,9 +113,9 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- testscript.LoginPage_Test -->
     </test> <!-- chrometest -->
-    <test started-at="2024-12-11T22:07:25 IST" name="edgetest" finished-at="2024-12-11T22:07:31 IST" duration-ms="5929">
+    <test started-at="2024-12-12T12:56:09 IST" name="edgetest" finished-at="2024-12-12T12:56:13 IST" duration-ms="3806">
       <class name="testscript.LoginPage_Test">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@548e6d58]" started-at="2024-12-11T22:07:25 IST" name="beforeMethod" finished-at="2024-12-11T22:07:28 IST" duration-ms="3873" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@5609159b]" started-at="2024-12-12T12:56:09 IST" name="beforeMethod" finished-at="2024-12-12T12:56:11 IST" duration-ms="2143" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,15 +126,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@548e6d58]" started-at="2024-12-11T22:07:28 IST" name="UserAbleToLoginWithCorrectCredentials" finished-at="2024-12-11T22:07:29 IST" duration-ms="650" status="PASS">
+        <test-method signature="UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@5609159b]" started-at="2024-12-12T12:56:11 IST" name="UserAbleToLoginWithCorrectCredentials" finished-at="2024-12-12T12:56:12 IST" duration-ms="547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserAbleToLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@548e6d58]" started-at="2024-12-11T22:07:29 IST" name="afterMethod" finished-at="2024-12-11T22:07:31 IST" duration-ms="1404" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@5609159b]" started-at="2024-12-12T12:56:12 IST" name="afterMethod" finished-at="2024-12-12T12:56:13 IST" duration-ms="1114" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserAbleToLoginWithCorrectCredentials status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@548e6d58] output={null}]]]>
+                <![CDATA[[TestResult name=UserAbleToLoginWithCorrectCredentials status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@5609159b] output={null}]]]>
               </value>
             </param>
           </params>

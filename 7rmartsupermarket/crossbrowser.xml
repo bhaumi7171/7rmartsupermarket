@@ -8,10 +8,10 @@
    
     <classes>
    
-<class name="testscript.LoginPage_Test">
+<class name="testscript.LoginPage_Test"><!--
 <methods>
 <include name="UserAbleToLoginWithCorrectCredentials"></include>
-</methods>
+</methods>-->
       
       </class>
     </classes>
