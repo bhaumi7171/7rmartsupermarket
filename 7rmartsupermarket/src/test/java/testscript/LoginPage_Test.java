@@ -42,7 +42,6 @@ public class LoginPage_Test extends Baseproject {
 		String password = Excel_Utility.readStringData(3, 1, "Login_Page");
 		Login_Page signin = new Login_Page(driver);
 		signin.userAbleToLoginSuccessfullywithlogindetails(username, password);
-
 		signin.userAbleToJoinSuccessfullyLogin();
 		boolean isalertshown = signin.isAlertShown();
 		assertTrue(isalertshown, Constant.ERRORMESSAGEFORLOGIN2);
