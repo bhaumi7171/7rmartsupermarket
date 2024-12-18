@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\automation\git\7rmartsupermarket\7rmartsupermarket\crossbrowser.xml</span>
+                    <span>D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,41 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.LoginPage_Test" class="method navigator-link" hash-for-method="UserAbleToLoginWithCorrectCredentials">UserAbleToLoginWithCorrectCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testscript.LoginPage_Test" class="method navigator-link" hash-for-method="UserAbleToLoginWithCorrectCredentials">UserAbleToLoginWithCorrectCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.LoginPage_Test" class="method navigator-link" hash-for-method="UserAbleToLoginWithCorrectUsernameIncorretPassword">UserAbleToLoginWithCorrectUsernameIncorretPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.LoginPage_Test" class="method navigator-link" hash-for-method="UserAbleToLoginWithInCorrectUsernameCorretPassword">UserAbleToLoginWithInCorrectUsernameCorretPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.LoginPage_Test" class="method navigator-link" hash-for-method="UserAbleToLoginWithInCorrectUsernameIncorretPassword">UserAbleToLoginWithInCorrectUsernameIncorretPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -138,9 +133,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">testscript.LoginPage_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,13 +144,12 @@
                   <a name="UserAbleToLoginWithCorrectCredentials">
                   </a> <!-- UserAbleToLoginWithCorrectCredentials -->
                   <span class="method-name">UserAbleToLoginWithCorrectCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UserAbleToLoginWithCorrectCredentials">
-                  </a> <!-- UserAbleToLoginWithCorrectCredentials -->
-                  <span class="method-name">UserAbleToLoginWithCorrectCredentials</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browzer&apos; is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -163,6 +157,12 @@
                   <a name="UserAbleToLoginWithCorrectUsernameIncorretPassword">
                   </a> <!-- UserAbleToLoginWithCorrectUsernameIncorretPassword -->
                   <span class="method-name">UserAbleToLoginWithCorrectUsernameIncorretPassword</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browzer&apos; is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -170,6 +170,12 @@
                   <a name="UserAbleToLoginWithInCorrectUsernameCorretPassword">
                   </a> <!-- UserAbleToLoginWithInCorrectUsernameCorretPassword -->
                   <span class="method-name">UserAbleToLoginWithInCorrectUsernameCorretPassword</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browzer&apos; is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -177,40 +183,36 @@
                   <a name="UserAbleToLoginWithInCorrectUsernameIncorretPassword">
                   </a> <!-- UserAbleToLoginWithInCorrectUsernameIncorretPassword -->
                   <span class="method-name">UserAbleToLoginWithInCorrectUsernameIncorretPassword</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browzer&apos; is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\automation\git\7rmartsupermarket\7rmartsupermarket\crossbrowser.xml</span>
+            <span class="header-content">D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;chrometest&quot;&gt;
-    &lt;parameter name=&quot;browzer&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;generatereport.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;project7rmarttes&quot;&gt;
     &lt;parameter name=&quot;password&quot; value=&quot;admin&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;admin&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testscript.LoginPage_Test&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- chrometest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;edgetest&quot;&gt;
-    &lt;parameter name=&quot;browzer&quot; value=&quot;edge&quot;/&gt;
-    &lt;parameter name=&quot;password&quot; value=&quot;admin&quot;/&gt;
-    &lt;parameter name=&quot;username&quot; value=&quot;admin&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testscript.LoginPage_Test&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;UserAbleToLoginWithCorrectCredentials&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testscript.LoginPage_Test --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- edgetest --&gt;
+  &lt;/test&gt; &lt;!-- project7rmarttes --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,10 +224,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chrometest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">edgetest (1 class)</span>
+                <span class="test-name">project7rmarttes (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -251,32 +250,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'UserAbleToLoginWithCorrectCredentials')
+data.setCell(0, 1, 'UserAbleToLoginWithCorrectUsernameIncorretPassword')
 data.setCell(0, 2, 'testscript.LoginPage_Test')
-data.setCell(0, 3, 1213);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'UserAbleToLoginWithCorrectCredentials')
+data.setCell(1, 1, 'UserAbleToLoginWithInCorrectUsernameCorretPassword')
 data.setCell(1, 2, 'testscript.LoginPage_Test')
-data.setCell(1, 3, 547);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'UserAbleToLoginWithInCorrectUsernameIncorretPassword')
+data.setCell(2, 1, 'UserAbleToLoginWithCorrectCredentials')
 data.setCell(2, 2, 'testscript.LoginPage_Test')
-data.setCell(2, 3, 474);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'UserAbleToLoginWithInCorrectUsernameCorretPassword')
+data.setCell(3, 1, 'UserAbleToLoginWithInCorrectUsernameIncorretPassword')
 data.setCell(3, 2, 'testscript.LoginPage_Test')
-data.setCell(3, 3, 396);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'UserAbleToLoginWithCorrectUsernameIncorretPassword')
-data.setCell(4, 2, 'testscript.LoginPage_Test')
-data.setCell(4, 3, 387);
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -291,20 +286,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.LoginPage_Test</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">UserAbleToLoginWithInCorrectUsernameIncorretPassword</span>
-                <br/>
-                <span class="ignored-method-name">UserAbleToLoginWithCorrectUsernameIncorretPassword</span>
-                <br/>
-                <span class="ignored-method-name">UserAbleToLoginWithInCorrectUsernameCorretPassword</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -312,68 +296,6 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="chronological-class">
-              <div class="chronological-class-name">testscript.LoginPage_Test</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">UserAbleToLoginWithCorrectCredentials</span>
-                <span class="method-start">1829 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=UserAbleToLoginWithCorrectCredentials status=SUCCESS method=LoginPage_Test.UserAble...)</span>
-                <span class="method-start">3044 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">3163 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">UserAbleToLoginWithCorrectUsernameIncorretPassword</span>
-                <span class="method-start">4462 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=UserAbleToLoginWithCorrectUsernameIncorretPassword status=SUCCESS method=LoginPage_...)</span>
-                <span class="method-start">4850 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">4942 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">UserAbleToLoginWithInCorrectUsernameCorretPassword</span>
-                <span class="method-start">6429 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=UserAbleToLoginWithInCorrectUsernameCorretPassword status=SUCCESS method=LoginPage_...)</span>
-                <span class="method-start">6826 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">6925 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">UserAbleToLoginWithInCorrectUsernameIncorretPassword</span>
-                <span class="method-start">8279 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=UserAbleToLoginWithInCorrectUsernameIncorretPassword status=SUCCESS method=LoginPag...)</span>
-                <span class="method-start">8754 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">8895 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">UserAbleToLoginWithCorrectCredentials</span>
-                <span class="method-start">11038 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=UserAbleToLoginWithCorrectCredentials status=SUCCESS method=LoginPage_Test.UserAble...)</span>
-                <span class="method-start">11586 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

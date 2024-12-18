@@ -1,147 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-12T12:56:00 IST" name="Suite" finished-at="2024-12-12T12:56:13 IST" duration-ms="12725">
+  <suite started-at="2024-12-18T11:10:27 IST" name="Suite" finished-at="2024-12-18T11:10:27 IST" duration-ms="62">
     <groups>
     </groups>
-    <test started-at="2024-12-12T12:56:00 IST" name="chrometest" finished-at="2024-12-12T12:56:09 IST" duration-ms="8902">
+    <test started-at="2024-12-18T11:10:27 IST" name="project7rmarttes" finished-at="2024-12-18T11:10:27 IST" duration-ms="62">
       <class name="testscript.LoginPage_Test">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:00 IST" name="beforeMethod" finished-at="2024-12-12T12:56:02 IST" duration-ms="1828" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1734500427239" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:02 IST" name="UserAbleToLoginWithCorrectCredentials" finished-at="2024-12-12T12:56:03 IST" duration-ms="1213" status="PASS">
+        <test-method signature="UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="UserAbleToLoginWithCorrectCredentials" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserAbleToLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:03 IST" name="afterMethod" finished-at="2024-12-12T12:56:04 IST" duration-ms="115" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserAbleToLoginWithCorrectCredentials status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@24aed80c] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="afterMethod" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:04 IST" name="beforeMethod" finished-at="2024-12-12T12:56:05 IST" duration-ms="1299" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="beforeMethod" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToLoginWithCorrectUsernameIncorretPassword()[pri:2, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:05 IST" name="UserAbleToLoginWithCorrectUsernameIncorretPassword" finished-at="2024-12-12T12:56:05 IST" duration-ms="387" status="PASS">
+        <test-method signature="UserAbleToLoginWithCorrectUsernameIncorretPassword()[pri:2, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="UserAbleToLoginWithCorrectUsernameIncorretPassword" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserAbleToLoginWithCorrectUsernameIncorretPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:05 IST" name="afterMethod" finished-at="2024-12-12T12:56:05 IST" duration-ms="91" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserAbleToLoginWithCorrectUsernameIncorretPassword status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithCorrectUsernameIncorretPassword()[pri:2, instance:testscript.LoginPage_Test@24aed80c] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="afterMethod" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:05 IST" name="beforeMethod" finished-at="2024-12-12T12:56:07 IST" duration-ms="1487" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="beforeMethod" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToLoginWithInCorrectUsernameCorretPassword()[pri:3, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:07 IST" name="UserAbleToLoginWithInCorrectUsernameCorretPassword" finished-at="2024-12-12T12:56:07 IST" duration-ms="396" status="PASS">
+        <test-method signature="UserAbleToLoginWithInCorrectUsernameCorretPassword()[pri:3, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="UserAbleToLoginWithInCorrectUsernameCorretPassword" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserAbleToLoginWithInCorrectUsernameCorretPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:07 IST" name="afterMethod" finished-at="2024-12-12T12:56:07 IST" duration-ms="98" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserAbleToLoginWithInCorrectUsernameCorretPassword status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithInCorrectUsernameCorretPassword()[pri:3, instance:testscript.LoginPage_Test@24aed80c] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="afterMethod" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:07 IST" name="beforeMethod" finished-at="2024-12-12T12:56:09 IST" duration-ms="1354" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="beforeMethod" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToLoginWithInCorrectUsernameIncorretPassword()[pri:4, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:09 IST" name="UserAbleToLoginWithInCorrectUsernameIncorretPassword" finished-at="2024-12-12T12:56:09 IST" duration-ms="474" status="PASS">
+        <test-method signature="UserAbleToLoginWithInCorrectUsernameIncorretPassword()[pri:4, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="UserAbleToLoginWithInCorrectUsernameIncorretPassword" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in D:\automation\git\7rmartsupermarket\7rmartsupermarket\Extendreport.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserAbleToLoginWithInCorrectUsernameIncorretPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@24aed80c]" started-at="2024-12-12T12:56:09 IST" name="afterMethod" finished-at="2024-12-12T12:56:09 IST" duration-ms="122" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserAbleToLoginWithInCorrectUsernameIncorretPassword status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithInCorrectUsernameIncorretPassword()[pri:4, instance:testscript.LoginPage_Test@24aed80c] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@aba625]" started-at="2024-12-18T11:10:27 IST" name="afterMethod" finished-at="2024-12-18T11:10:27 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testscript.LoginPage_Test -->
-    </test> <!-- chrometest -->
-    <test started-at="2024-12-12T12:56:09 IST" name="edgetest" finished-at="2024-12-12T12:56:13 IST" duration-ms="3806">
-      <class name="testscript.LoginPage_Test">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPage_Test@5609159b]" started-at="2024-12-12T12:56:09 IST" name="beforeMethod" finished-at="2024-12-12T12:56:11 IST" duration-ms="2143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@5609159b]" started-at="2024-12-12T12:56:11 IST" name="UserAbleToLoginWithCorrectCredentials" finished-at="2024-12-12T12:56:12 IST" duration-ms="547" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserAbleToLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPage_Test@5609159b]" started-at="2024-12-12T12:56:12 IST" name="afterMethod" finished-at="2024-12-12T12:56:13 IST" duration-ms="1114" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserAbleToLoginWithCorrectCredentials status=SUCCESS method=LoginPage_Test.UserAbleToLoginWithCorrectCredentials()[pri:1, instance:testscript.LoginPage_Test@5609159b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testscript.LoginPage_Test -->
-    </test> <!-- edgetest -->
+    </test> <!-- project7rmarttes -->
   </suite> <!-- Suite -->
 </testng-results>

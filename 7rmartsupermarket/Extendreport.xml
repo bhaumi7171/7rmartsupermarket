@@ -10,7 +10,7 @@
 
 		<classes>
 
-			<class name="testscript.AdminAddCategory_Test">
+			<class name="testscript.LoginPage_Test">
 
 			</class>
 		</classes>

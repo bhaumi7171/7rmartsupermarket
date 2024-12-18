@@ -8,13 +8,16 @@
     <parameter name="password" value="admin"/>
     <parameter name="username" value="admin"/>
     <classes>
-      <class name="testscript.AdminAddCategory_Test">
+      <class name="testscript.LoginPage_Test">
         <methods>
           <include name="beforeMethod"/>
-          <include name="UserAbleToAddCategory"/>
+          <include name="UserAbleToLoginWithInCorrectUsernameCorretPassword"/>
+          <include name="UserAbleToLoginWithInCorrectUsernameIncorretPassword"/>
+          <include name="UserAbleToLoginWithCorrectUsernameIncorretPassword"/>
           <include name="afterMethod"/>
+          <include name="UserAbleToLoginWithCorrectCredentials"/>
         </methods>
-      </class> <!-- testscript.AdminAddCategory_Test -->
+      </class> <!-- testscript.LoginPage_Test -->
     </classes>
   </test> <!-- project7rmarttes(failed) -->
 </suite> <!-- Failed suite [Suite] -->
