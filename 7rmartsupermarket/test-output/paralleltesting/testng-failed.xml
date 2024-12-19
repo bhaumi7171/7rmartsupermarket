@@ -6,13 +6,6 @@
     <parameter name="password" value="admin"/>
     <parameter name="username" value="admin"/>
     <classes>
-      <class name="testscript.LoginPage_Test">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="UserAbleToLoginWithCorrectCredentials"/>
-        </methods>
-      </class> <!-- testscript.LoginPage_Test -->
       <class name="testscript.AdminUserAdd_Test">
         <methods>
           <include name="beforeMethod"/>

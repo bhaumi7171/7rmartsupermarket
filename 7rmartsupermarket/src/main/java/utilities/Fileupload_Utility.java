@@ -30,15 +30,5 @@ public class Fileupload_Utility {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 
-	public void selectDetails() throws AWTException {
-		Robot robo = new Robot();
-		;
-		robo.delay(2);
-		robo.keyPress(KeyEvent.VK_CONTROL);
-		robo.keyPress(KeyEvent.VK_A);
-		robo.keyRelease(KeyEvent.VK_CONTROL);
-		robo.keyRelease(KeyEvent.VK_X);
-		robo.keyPress(KeyEvent.VK_ENTER);
-		robo.keyRelease(KeyEvent.VK_ENTER);
-	}
+	
 }

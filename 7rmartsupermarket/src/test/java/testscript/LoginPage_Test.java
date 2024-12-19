@@ -12,9 +12,10 @@ import org.testng.annotations.Test;
 import constants.Constant;
 import pages.Login_Page;
 import utilities.Excel_Utility;
+import utilities.Faker_Utility;
 
 public class LoginPage_Test extends Baseproject {
-	@Test(priority = 1)
+	@Test(groups = {"smoke"})
 	public void UserAbleToLoginWithCorrectCredentials() throws IOException {
 		String username = Excel_Utility.readStringData(1, 0, "Login_Page");
 		String password = Excel_Utility.readStringData(1, 1, "Login_Page");
@@ -27,8 +28,11 @@ public class LoginPage_Test extends Baseproject {
 
 	@Test(priority = 2)
 	public void UserAbleToLoginWithCorrectUsernameIncorretPassword() throws IOException {
-		String username = Excel_Utility.readStringData(2, 0, "Login_Page");
-		String password = Excel_Utility.readStringData(2, 1, "Login_Page");
+		Faker_Utility fake=new Faker_Utility();
+		String username=fake.getFakeFirstName();
+		String password=fake.getFakeLastName();
+		//String username = Excel_Utility.readStringData(2, 0, "Login_Page");
+		//String password = Excel_Utility.readStringData(2, 1, "Login_Page");
 		Login_Page signin = new Login_Page(driver);
 		signin.userAbleToLoginSuccessfullywithlogindetails(username, password);
 		signin.userAbleToJoinSuccessfullyLogin();

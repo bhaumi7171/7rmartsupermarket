@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.AdminUserAdd_Test">
+      <class name="testscript.LoginPage_Test">
         <methods>
           <include name="beforeMethod"/>
-          <include name="adminAbleToLogin"/>
+          <include name="UserAbleToLoginWithCorrectUsernameIncorretPassword"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testscript.AdminUserAdd_Test -->
+      </class> <!-- testscript.LoginPage_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="generatereport.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="project7rmarttes(failed)">
-    <parameter name="password" value="admin"/>
-    <parameter name="username" value="admin"/>
+  <parameter name="browzer" value="chrome"/>
+  <parameter name="password" value="admin"/>
+  <parameter name="username" value="admin"/>
+  <test thread-count="5" name="grouping(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
       <class name="testscript.LoginPage_Test">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="UserAbleToLoginWithInCorrectUsernameCorretPassword"/>
-          <include name="UserAbleToLoginWithInCorrectUsernameIncorretPassword"/>
-          <include name="UserAbleToLoginWithCorrectUsernameIncorretPassword"/>
-          <include name="afterMethod"/>
           <include name="UserAbleToLoginWithCorrectCredentials"/>
         </methods>
       </class> <!-- testscript.LoginPage_Test -->
     </classes>
-  </test> <!-- project7rmarttes(failed) -->
+  </test> <!-- grouping(failed) -->
 </suite> <!-- Failed suite [Suite] -->
