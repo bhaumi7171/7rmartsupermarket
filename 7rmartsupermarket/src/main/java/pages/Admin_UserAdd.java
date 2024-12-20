@@ -58,7 +58,7 @@ public class Admin_UserAdd {
 		return this;
 	}
 
-	public Admin_UserAdd userTypeDropdown() {
+	public Admin_UserAdd userTypeDropdown() { 
 		Page_Utility page = new Page_Utility();
 		page.selectbytext(usertype, "Staff");
 		return this;

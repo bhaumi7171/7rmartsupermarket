@@ -15,7 +15,7 @@ import utilities.Excel_Utility;
 import utilities.Faker_Utility;
 
 public class LoginPage_Test extends Baseproject {
-	@Test(groups = {"smoke"})
+	@Test(groups = { "smoke" })
 	public void UserAbleToLoginWithCorrectCredentials() throws IOException {
 		String username = Excel_Utility.readStringData(1, 0, "Login_Page");
 		String password = Excel_Utility.readStringData(1, 1, "Login_Page");
@@ -26,15 +26,20 @@ public class LoginPage_Test extends Baseproject {
 		assertTrue(issignindone, Constant.ERRORMESSAGEFORLOGIN);
 	}
 
-	@Test(priority = 2)
+	@DataProvider(name = "logincredentials")
+	public Object[][] testData() {
+		Object data[][] = { { "admin", "1234" }, { "1234", "admin" } };
+		return data;
+	}
+
+	@Test(dataProvider = "logincredentials")
 	public void UserAbleToLoginWithCorrectUsernameIncorretPassword() throws IOException {
-		Faker_Utility fake=new Faker_Utility();
-		String username=fake.getFakeFirstName();
-		String password=fake.getFakeLastName();
-		//String username = Excel_Utility.readStringData(2, 0, "Login_Page");
-		//String password = Excel_Utility.readStringData(2, 1, "Login_Page");
+		String username = Excel_Utility.readStringData(2, 0, "Login_Page");
+		String password = Excel_Utility.readStringData(2, 1, "Login_Page");
+
 		Login_Page signin = new Login_Page(driver);
 		signin.userAbleToLoginSuccessfullywithlogindetails(username, password);
+
 		signin.userAbleToJoinSuccessfullyLogin();
 		boolean isalertshown = signin.isAlertShown();
 		assertTrue(isalertshown, Constant.ERRORMESSAGEFORLOGIN1);
